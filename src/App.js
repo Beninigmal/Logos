@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "antd/dist/antd.css";
+
+import { Layout, Space, Typography } from "antd";
+import HeaderApp from "./components/common/HeaderApp";
+import CarouselLogos from "./components/CarouselLogos/CarouselLogos";
+import lesite from "./assets/images/lesite.png";
+
+const { Header } = Layout;
+const { Title } = Typography;
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="mainLayout">
+      <Header>
+        <HeaderApp />
+        <CarouselLogos />
+        <Space direction="vertical" className="authorized-representative">
+          <img src={lesite} alt="logo lesite" />
+          <Title style={{color: "#fff"}}>Representante autorizado</Title>
+        </Space>
+      </Header>
+    </Layout>
   );
 }
 
