@@ -10,18 +10,19 @@ const carouselImages = [carousel1, carousel2, carousel3, carousel4];
 const contentStyle = {
   display: "flex",
   justifyContent: "center",
-  height: "400px",
-  lineHeight: "160px",
-  textAlign: "center",
+  height: "500px",
+  
+  
   background: "#fff",
   alignItems: "center",
-  zIndex: "999",
-  paddingBottom: "10px",
+  
+  marginTop: "100px",
+  marginBottom: "100px"
 };
 
 const CarouselLogos = () => {
   return (
-    <Carousel pauseOnHover arrows autoplay>
+    <Carousel autoplay>
       {carouselImages.map((carouselImage) => {
         return (
           <div key={carouselImage}>

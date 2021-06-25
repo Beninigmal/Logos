@@ -204,10 +204,12 @@ header
 /* Carousel Image */
 .carousel-image {
   background-color: #fff;
-  height: 350px;
+  height: 400px;
 }
 .slick-dots li button {
   background: rgb(58, 55, 55) !important;
+  position: absolute;
+  top: -75px;
 }
 
 /* 
@@ -216,17 +218,59 @@ Representante autorizado
 */
 .authorized-representative {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
-  background: #969696;
   width: 100vw;
-  height: 350px;
+  height: 450px;
 }
 
-.authorized-title {
- 
-  color: rgb(146, 42, 42);
+.authorized-bg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(-45deg, #ee7752, #23a6d5);
+  background-size: 500% 500%;
+  animation: gradient 5s ease infinite;
+  width: 100vw;
+  height: 600px;
+}
+.authorized-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+}
+
+.authorized-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 400px;
+  height: 200px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.authorized-logo {
+  width: 300px;
+  height: 300px;
 }
 
 .heroBlock .container-fluid {

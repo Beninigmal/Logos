@@ -1,26 +1,30 @@
 import "./App.css";
 import "antd/dist/antd.css";
 
-import { Layout, Space, Typography } from "antd";
+import { Layout, Typography } from "antd";
 import HeaderApp from "./components/common/HeaderApp";
 import CarouselLogos from "./components/CarouselLogos/CarouselLogos";
-import lesite from "./assets/images/lesite.png";
 
-const { Header } = Layout;
+import bgAuthorized from "./assets/images/05.png";
+import Footer from "./components/Footer/Footer";
+import AuthorizedSection from "./components/AuthorizedSection/AuthorizedSection";
+
+const { Header, Content } = Layout;
 const { Title } = Typography;
 
 function App() {
+  
 
   return (
     <Layout className="mainLayout">
       <Header>
         <HeaderApp />
-        <CarouselLogos />
-        <Space direction="vertical" className="authorized-representative">
-          <img src={lesite} alt="logo lesite" />
-          <Title style={{color: "#fff"}}>Representante autorizado</Title>
-        </Space>
       </Header>
+      <Content>
+        <CarouselLogos />
+        <AuthorizedSection />
+      </Content>
+      <Footer />
     </Layout>
   );
 }
