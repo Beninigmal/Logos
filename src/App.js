@@ -1,16 +1,16 @@
 import "./App.css";
 import "antd/dist/antd.css";
-
 import { Layout, Typography } from "antd";
 import HeaderApp from "./components/common/HeaderApp";
 import CarouselLogos from "./components/CarouselLogos/CarouselLogos";
-
-import bgAuthorized from "./assets/images/05.png";
 import Footer from "./components/Footer/Footer";
 import AuthorizedSection from "./components/AuthorizedSection/AuthorizedSection";
+import SellingWinner from "./components/SellingWinner/SellingWinner";
+import Clients from "./components/Clients/Clients";
+
 
 const { Header, Content } = Layout;
-const { Title } = Typography;
+
 
 function App() {
   
@@ -23,6 +23,8 @@ function App() {
       <Content>
         <CarouselLogos />
         <AuthorizedSection />
+        <SellingWinner />
+        <Clients />
       </Content>
       <Footer />
     </Layout>

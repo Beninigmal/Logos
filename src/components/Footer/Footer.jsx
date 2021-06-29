@@ -14,16 +14,19 @@ const Footer = () => {
       justifyContent: "space-between",
       alignItem: "center",
       textAlign: "center",
+      position: "absolute",
+      bottom: -1500,
+      left: 0
     },
     tel: {
       width: "calc(100%/3)",
       heght: "100%",
-      borderRight: "solid 3px #fff"
+      borderRight: "solid 3px #fff",
     },
     email: {
       width: "calc(100%/3)",
       heght: "100%",
-      borderRight: "solid 3px #fff"
+      borderRight: "solid 3px #fff",
     },
     social: {
       width: "calc(100%/3)",

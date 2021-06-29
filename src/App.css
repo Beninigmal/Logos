@@ -74,15 +74,15 @@ header
 }
 
 .logos-logo {
-  width: 300px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  
 }
 
 .header .logo {
@@ -234,8 +234,19 @@ Representante autorizado
   background-size: 500% 500%;
   animation: gradient 5s ease infinite;
   width: 100vw;
-  height: 600px;
+  height: 450px;
 }
+.authorized-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: justify;
+  width: 400px;
+  height: 200px;
+}
+
 .authorized-container-left {
   display: flex;
   flex-direction: column;
@@ -244,16 +255,7 @@ Representante autorizado
   text-align: center;
   width: 400px;
   height: 200px;
-}
-
-.authorized-container-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  width: 400px;
-  height: 200px;
+  line-height: 35px;
 }
 
 @keyframes gradient {
@@ -269,8 +271,8 @@ Representante autorizado
 }
 
 .authorized-logo {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .heroBlock .container-fluid {
