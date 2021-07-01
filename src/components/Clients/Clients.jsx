@@ -3,7 +3,7 @@ import React from "react";
 import pessoa01 from "../../assets/images/pessoa01.jpg";
 import pessoa02 from "../../assets/images/pessoa02.jpg";
 
-import '../common/fonts.css'
+import "../common/fonts.css";
 
 const Clients = () => {
   const content = {
@@ -15,25 +15,24 @@ const Clients = () => {
       flexDirection: "column",
       height: "577px",
       width: "100vw",
-      background: "#1a7da5",
     },
     container: {
       display: "flex",
-      justifyContent:"space-around",
+      justifyContent: "center",
       height: "50%",
     },
     p: {
       width: "450px",
-      margin: "50px 50px",
+      margin: "50px 0px",
       fontSize: "27px",
       fontFamily: "'Dancing Script', cursive",
-      right: {position: "relative", right: -549}
+      right: { position: "relative", right: -549 },
     },
     image: {
-        height: "250px",
-        width: "320px",
-        marginTop: 20 
-    }
+      height: "250px",
+      width: "380px",
+      margin: "20px",
+    },
   };
   return (
     <section style={content.general}>

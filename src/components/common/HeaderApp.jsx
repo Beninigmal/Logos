@@ -6,7 +6,7 @@ import '../common/fonts.css'
 const HeaderApp = () => {
   const content = {
     menu: {
-      background: "#ffffff",
+      background: "#7a1212",
     },
     h2: {
       fontFamily: 'Roboto',

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "antd";
+import { Card, Image } from "antd";
 import image05 from "../../assets/images/06.jpg";
 import vassoura from "../../assets/images/vassoura.jpg";
 import pa from "../../assets/images/pa.jpg";
@@ -75,7 +75,7 @@ const SellingWinner = () => {
       <Title style={content.h1}>Campeão de Vendas</Title>
       <div style={{ display: "flex", margin: 0, padding: 0 }}>
         <Card hoverable style={content.card1}>
-          <img style={content.imageCard} alt="example" src={image05} />
+          <Image style={content.imageCard} alt="example" src={image05} />
           <Meta
             style={content.meta}
             title={<h2 style={content.title}>Máquina</h2>}
@@ -86,7 +86,7 @@ const SellingWinner = () => {
         </Card>
 
         <Card hoverable style={content.card2}>
-          <img style={content.imageCard} alt="example" src={vassoura} />
+          <Image style={content.imageCard} alt="example" src={vassoura} />
           <Meta
             style={content.meta}
             title={<h2 style={content.title}>Vassoura</h2>}
@@ -97,7 +97,7 @@ const SellingWinner = () => {
         </Card>
 
         <Card hoverable style={content.card3}>
-          <img style={content.imageCard} alt="example" src={pa} />
+          <Image style={content.imageCard} alt="example" src={pa} />
           <Meta
             style={content.meta}
             title={<h2 style={content.title}>Pá</h2>}

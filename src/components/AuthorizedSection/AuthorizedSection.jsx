@@ -1,5 +1,4 @@
 import { Typography } from "antd";
-import Title from "antd/lib/skeleton/Title";
 import React from "react";
 import lesite from "../../assets/images/lesite.png";
 

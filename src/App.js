@@ -1,6 +1,6 @@
 import "./App.css";
 import "antd/dist/antd.css";
-import { Layout, Typography } from "antd";
+import { Layout } from "antd";
 import HeaderApp from "./components/common/HeaderApp";
 import CarouselLogos from "./components/CarouselLogos/CarouselLogos";
 import Footer from "./components/Footer/Footer";
